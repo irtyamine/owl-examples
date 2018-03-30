@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { OwlFormFieldModule, OwlInputMaskModule, OwlInputModule } from 'owl-ng';
 
 @NgModule({
     declarations: [
@@ -13,6 +14,10 @@ import { AppComponent } from './app.component';
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
+
+        OwlFormFieldModule,
+        OwlInputModule,
+        OwlInputMaskModule
     ],
     providers: [],
     bootstrap: [AppComponent]
