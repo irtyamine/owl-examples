@@ -1,0 +1,12 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Basic</h2>
+
+    <owl-radio-group class="example-radio-group" name="brand1" [(ngModel)]="selectedBrand">
+        <owl-radio-button class="example-radio" value="Apple">Apple</owl-radio-button>
+        <owl-radio-button class="example-radio" value="Samsung">Samsung</owl-radio-button>
+        <owl-radio-button class="example-radio" value="Google">Google</owl-radio-button>
+        <owl-radio-button class="example-radio" value="Amazon">Amazon</owl-radio-button>
+    </owl-radio-group>
+
+    <h4>Value: {{selectedBrand | json}}</h4>
+</div>

@@ -1,0 +1,12 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Disable Radio Button</h2>
+
+    <owl-radio-group class="example-radio-group" name="brand3" [(ngModel)]="selectedBrand">
+        <owl-radio-button class="example-radio" value="Apple">Apple</owl-radio-button>
+        <owl-radio-button class="example-radio" value="Samsung" [disabled]="true">Samsung</owl-radio-button>
+        <owl-radio-button class="example-radio" value="Google" [disabled]="true">Google</owl-radio-button>
+        <owl-radio-button class="example-radio" value="Amazon">Amazon</owl-radio-button>
+    </owl-radio-group>
+
+    <h4>Value: {{selectedBrand | json}}</h4>
+</div>

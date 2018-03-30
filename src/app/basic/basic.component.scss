@@ -1,0 +1,7 @@
+.example-radio-group {
+  display: flex;
+
+  .example-radio:not(:first-child) {
+    margin-left: 1.5em;
+  }
+}
