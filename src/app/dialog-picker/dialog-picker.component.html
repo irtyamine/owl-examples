@@ -1,0 +1,8 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Open as a Dialog</h2>
+
+    <span [owlColorPickerTrigger]="picker" class="example-color-trigger"></span>
+    <owl-color-picker [pickerMode]="'dialog'" [(ngModel)]="color" #picker></owl-color-picker>
+
+    <h4>Value: {{color | json}}</h4>
+</div>

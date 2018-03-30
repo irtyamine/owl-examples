@@ -1,0 +1,11 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Color Picker with Radio Buttons</h2>
+
+    <owl-color-radio class="example-radio-group" name="brand" [(ngModel)]="selectedColor">
+        <owl-color-radio-button class="example-radio-btn" [value]="'#e91e63'"></owl-color-radio-button>
+        <owl-color-radio-button class="example-radio-btn" [value]="'#673ab7'"></owl-color-radio-button>
+        <owl-color-radio-button class="example-radio-btn" [value]="'#4caf50'"></owl-color-radio-button>
+    </owl-color-radio>
+
+    <h4>Value: {{selectedColor | json}}</h4>
+</div>
