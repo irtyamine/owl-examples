@@ -1,0 +1,14 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Disable Checkbox</h2>
+
+    <owl-check-box class="demo-chkbox"
+                   [(ngModel)]="chkbox_disable">Disabled Below Check box
+    </owl-check-box>
+
+    <owl-check-box class="demo-chkbox"
+                   [disabled]="chkbox_disable"
+                   [(ngModel)]="chkbox_value">Click To check/uncheck this box
+    </owl-check-box>
+
+    <h4>Value: {{chkbox_value | json}}</h4>
+</div>

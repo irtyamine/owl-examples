@@ -1,0 +1,19 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Select Multiple Value</h2>
+    <owl-check-box class="demo-chkbox"
+                   [(ngModel)]="selectedDramas" [binary]="false"
+                   [id]="'got'" [name]="'dramas'" [value]="'Game of Thrones'">
+        Game of Thrones
+    </owl-check-box>
+    <owl-check-box class="demo-chkbox"
+                   [(ngModel)]="selectedDramas" [binary]="false"
+                   [id]="'twd'" [name]="'dramas'" [value]="'The Walking Dead'">
+        The Walking Dead
+    </owl-check-box>
+    <owl-check-box class="demo-chkbox"
+                   [(ngModel)]="selectedDramas" [binary]="false"
+                   [id]="'hoc'" [name]="'dramas'" [value]="'House of Cards'">
+        House of Cards
+    </owl-check-box>
+    <h4>Value: {{selectedDramas | json}}</h4>
+</div>

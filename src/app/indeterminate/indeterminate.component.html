@@ -1,0 +1,52 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Indeterminate Checkbox</h2>
+
+    <div class="demo-chkbox-row">
+        <div class="demo-chkbox-group">
+            <owl-check-box class="demo-chkbox"
+                           [(ngModel)]="fruitChecked"
+                           [(indeterminate)]="fruitIndeterminate"
+                           (change)="toggleFruitCheck($event)">
+                Fruit
+            </owl-check-box>
+
+            <owl-check-box class="demo-chkbox"
+                           [style.marginLeft]="'2em'" [(ngModel)]="selectedGroceries" [binary]="false"
+                           [name]="'grocery'" [value]="'Apple'"
+                           (change)="onFruitChange($event)">
+                Apple
+            </owl-check-box>
+
+            <owl-check-box class="demo-chkbox"
+                           [style.marginLeft]="'2em'" [(ngModel)]="selectedGroceries" [binary]="false"
+                           [name]="'grocery'" [value]="'Orange'"
+                           (change)="onFruitChange($event)">
+                Orange
+            </owl-check-box>
+        </div>
+
+        <div class="demo-chkbox-group">
+            <owl-check-box class="demo-chkbox"
+                           [(ngModel)]="meatChecked"
+                           [(indeterminate)]="meatIndeterminate"
+                           (change)="toggleMeatCheck($event)">
+                Meat
+            </owl-check-box>
+
+            <owl-check-box class="demo-chkbox"
+                           [style.marginLeft]="'2em'" [(ngModel)]="selectedGroceries" [binary]="false"
+                           [name]="'grocery'" [value]="'Pork'" (change)="onMeatChange($event)">
+                Pork
+            </owl-check-box>
+
+            <owl-check-box class="demo-chkbox"
+                           [style.marginLeft]="'2em'" [(ngModel)]="selectedGroceries" [binary]="false"
+                           [name]="'grocery'" [value]="'Beef'" (change)="onMeatChange($event)">
+                Beef
+            </owl-check-box>
+        </div>
+    </div>
+
+    <h4>Value: {{selectedGroceries | json}}</h4>
+</div>
+

@@ -1,0 +1,24 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Preselection</h2>
+    <owl-check-box class="demo-chkbox"
+                   [(ngModel)]="selectedBrands" [binary]="false"
+                   [id]="'Apple'" [name]="'brands'" [value]="'Apple'">
+        Apple
+    </owl-check-box>
+    <owl-check-box class="demo-chkbox"
+                   [(ngModel)]="selectedBrands" [binary]="false"
+                   [id]="'Google'" [name]="'brands'" [value]="'Google'">
+        Google
+    </owl-check-box>
+    <owl-check-box class="demo-chkbox"
+                   [(ngModel)]="selectedBrands" [binary]="false"
+                   [id]="'Samsung'" [name]="'brands'" [value]="'Samsung'">
+        Samsung
+    </owl-check-box>
+    <owl-check-box class="demo-chkbox"
+                   [(ngModel)]="selectedBrands" [binary]="false"
+                   [id]="'Yahoo'" [name]="'brands'" [value]="'Yahoo'">
+        Yahoo
+    </owl-check-box>
+    <h4>Value: {{selectedBrands | json}}</h4>
+</div>

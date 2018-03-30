@@ -1,0 +1,27 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Customise</h2>
+    <owl-check-box class="demo-chkbox" [checkedIcon]="'cross'">
+        Cross Icon
+    </owl-check-box>
+
+    <owl-check-box class="demo-chkbox" [labelPosition]="'before'">
+        Label on the left
+    </owl-check-box>
+
+    <owl-check-box
+            [(ngModel)]="chkbox_value"
+            class="demo-chkbox" #likeBox="owlCheckBox">
+        <owl-check-box-toggle>
+            <span *ngIf="likeBox.checked;else elseBlock">
+                <i class="fas fa-heart demo-chkbox-icon"></i>
+            </span>
+            <ng-template #elseBlock>
+                <span>
+                    <i class="far fa-heart demo-chkbox-icon"></i>
+                </span>
+            </ng-template>
+        </owl-check-box-toggle>
+
+        {{chkbox_value? 'I like it' : 'I don\'t like it'}}
+    </owl-check-box>
+</div>
