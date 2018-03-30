@@ -1,0 +1,13 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Input with Error Message</h2>
+
+    <owl-form-field class="example-input-wrapper">
+        <input owlInput [formControl]="emailFormControl" id="email" name="email" placeholder="Email">
+        <owl-error *ngIf="emailFormControl.hasError('pattern')">
+            Please enter a valid email address
+        </owl-error>
+        <owl-error *ngIf="emailFormControl.hasError('required')">
+            Email is <strong>required</strong>
+        </owl-error>
+    </owl-form-field>
+</div>

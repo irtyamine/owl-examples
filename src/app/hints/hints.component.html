@@ -1,0 +1,9 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Hints Label</h2>
+
+    <owl-form-field class="example-input-wrapper">
+        <input owlInput #message maxlength="256" placeholder="Message">
+        <owl-hint align="start"><strong>Don't disclose personal info</strong></owl-hint>
+        <owl-hint align="end">{{message.value.length}} / 256</owl-hint>
+    </owl-form-field>
+</div>

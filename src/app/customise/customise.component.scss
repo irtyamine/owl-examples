@@ -1,0 +1,11 @@
+.customise-input {
+  &.owl-form-field-focused {
+    .owl-form-field-placeholder {
+      color: #00897b !important;
+    }
+
+    .owl-form-field-underline-graphic {
+      stroke: #00897b !important;
+    }
+  }
+}
