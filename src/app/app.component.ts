@@ -8,5 +8,11 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    title = 'app';
+    public checked_1 = false;
+
+    public disabled = false;
+
+    public checked_2 = false;
+
+    public checked_3 = false;
 }
