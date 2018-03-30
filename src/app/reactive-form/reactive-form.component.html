@@ -1,0 +1,9 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Select bind with Reactive Form</h2>
+
+    <owl-form-field class="example-input-wrapper">
+        <owl-select [formControl]="favouriteTeams" [multiple]="true" placeholder="Favorite Team">
+            <owl-option *ngFor="let team of teams" [value]="team">{{team}}</owl-option>
+        </owl-select>
+    </owl-form-field>
+</div>

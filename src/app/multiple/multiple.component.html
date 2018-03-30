@@ -1,0 +1,11 @@
+<div class="example-wrapper">
+  <h2 class="example-header">Multiple</h2>
+
+  <owl-form-field class="example-input-wrapper">
+    <owl-select [(ngModel)]="favouriteTeams" [multiple]="true" placeholder="Favorite Teams">
+      <owl-option *ngFor="let team of teams" [value]="team">{{team}}</owl-option>
+    </owl-select>
+  </owl-form-field>
+
+  <h4>Value: {{favouriteTeams | json}}</h4>
+</div>

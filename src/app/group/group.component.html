@@ -1,0 +1,18 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Select by Group</h2>
+
+    <owl-form-field class="example-input-wrapper">
+        <owl-select [(ngModel)]="favouriteBeverage" placeholder="Favourite Beverage">
+            <owl-option-group [label]="'Soft Drinks'">
+                <owl-option [value]="'Coke'">Coke</owl-option>
+                <owl-option [value]="'Sprite'">Sprite</owl-option>
+            </owl-option-group>
+            <owl-option-group [label]="'Beers'">
+                <owl-option [value]="'Corona'">Corona</owl-option>
+                <owl-option [value]="'Heineken'">Heineken</owl-option>
+            </owl-option-group>
+        </owl-select>
+    </owl-form-field>
+
+    <h4>Value: {{favouriteBeverage | json}}</h4>
+</div>

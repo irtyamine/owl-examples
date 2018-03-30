@@ -1,0 +1,13 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Custom Style to Dropdown Panel</h2>
+
+    <owl-form-field class="example-input-wrapper">
+        <owl-select placeholder="Panel color"
+                    [formControl]="panelColor"
+                    panelClass="example-panel-{{panelColor.value}}">
+            <owl-option value="red">Red</owl-option>
+            <owl-option value="green">Green</owl-option>
+            <owl-option value="blue">Blue</owl-option>
+        </owl-select>
+    </owl-form-field>
+</div>

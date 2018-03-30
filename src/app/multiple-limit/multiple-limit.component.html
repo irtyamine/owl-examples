@@ -1,0 +1,18 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Multiple Select with Limits</h2>
+
+    <owl-form-field class="example-input-wrapper">
+        <owl-select [(ngModel)]="favouriteTeams"
+                    [multiple]="true"
+                    [owlSelectRange]="[2, 4]"
+                    placeholder="Favorite Team" #teamInput="ngModel">
+            <owl-option *ngFor="let team of teams" [value]="team">{{team}}</owl-option>
+        </owl-select>
+        <div *ngIf="teamInput.invalid && (teamInput.dirty || teamInput.touched) && teamInput.errors.owlSelectRange"
+             owlError>
+            Selected Teams must between 2 and 4.
+        </div>
+    </owl-form-field>
+
+    <h4>Value: {{favouriteTeams | json}}</h4>
+</div>

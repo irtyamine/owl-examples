@@ -1,0 +1,13 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Select with objects as options</h2>
+
+    <owl-form-field class="example-input-wrapper">
+        <owl-select [(ngModel)]="selectedCar"
+                    [compareFn]="carCompareFn"
+                    placeholder="Select a Car">
+            <owl-option *ngFor="let car of cars" [value]="car">{{car.brand}} {{car.year}}</owl-option>
+        </owl-select>
+    </owl-form-field>
+
+    <h4>Value: {{selectedCar | json}}</h4>
+</div>
