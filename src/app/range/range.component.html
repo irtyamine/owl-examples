@@ -1,0 +1,47 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Range</h2>
+
+    <div class="example-input-group">
+        <owl-form-field class="example-input-wrapper">
+            <input owlInput placeholder="Low Value" type="number" [(ngModel)]="sliderValue[0]" readonly/>
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <input owlInput placeholder="High Value" type="number" [(ngModel)]="sliderValue[1]" readonly/>
+        </owl-form-field>
+    </div>
+
+    <div class="example-input-group">
+        <owl-form-field class="example-input-wrapper">
+            <input owlInput placeholder="Min" type="number" [(ngModel)]="min"/>
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <input owlInput placeholder="Max" type="number" [(ngModel)]="max"/>
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <input owlInput placeholder="Step" type="number" [(ngModel)]="step"/>
+        </owl-form-field>
+    </div>
+
+    <div class="example-input-group">
+        <owl-check-box [(ngModel)]="showTicks">Show ticks</owl-check-box>
+
+        <owl-form-field class="example-input-wrapper" *ngIf="showTicks">
+            <input owlInput placeholder="Tick Interval" type="number" [(ngModel)]="tickInterval"/>
+        </owl-form-field>
+    </div>
+
+    <owl-check-box class="example-chk-box" [(ngModel)]="disabled">Disable Slider</owl-check-box>
+    <owl-check-box class="example-chk-box" [(ngModel)]="showBalloonLabel">Show Balloon Label</owl-check-box>
+    <owl-check-box class="example-chk-box" [(ngModel)]="vertical">Vertical Mode</owl-check-box>
+
+    <owl-slider class="example-slider"
+                [(ngModel)]="sliderValue"
+                [tickInterval]="tickInterval" [range]="true"
+                [min]="min" [max]="max" [step]="step"
+                [disabled]="disabled" [vertical]="vertical"
+                [showBalloonLabel]="showBalloonLabel"
+                (changeOnSliding)="changeOnSliding($event)"></owl-slider>
+</div>
