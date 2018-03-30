@@ -1,0 +1,22 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Control The Timer</h2>
+
+    <owl-timer class="example-timer"
+               [timerDays]="timerDays"
+               [timerHours]="timerHours"
+               [timerMinutes]="timerMinutes"
+               [timerSeconds]="timerSeconds"
+               (countDownFinish)="countDownFinish()"
+               (timerStart)="timerStart()"
+               (timerStop)="timerStop()"
+               (timerTick)="timerTick()"
+               #ot="owlTimer"></owl-timer>
+
+    <div class="example-control">
+        <button owlRipple class="example-btn" (click)="ot.startTimer()">Start</button>
+        <button owlRipple class="example-btn" (click)="ot.pauseTimer()">Pause</button>
+        <button owlRipple class="example-btn" (click)="ot.resetTimer()">Reset</button>
+        <button owlRipple class="example-btn" (click)="ot.cancelTimer()">Cancel</button>
+        <button owlRipple class="example-btn" (click)="ot.addCDSeconds(10)">Add 10 Sec</button>
+    </div>
+</div>
