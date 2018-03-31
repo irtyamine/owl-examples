@@ -1,0 +1,37 @@
+.example-container {
+  padding: 1rem;
+}
+
+.example-wrapper {
+  margin-bottom: 3rem;
+}
+
+.example-chkbox {
+  margin: 1em 0;
+}
+
+.example-galleria-navi {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 1.5em;
+
+  &.example-galleria-navi-left {
+    left: 15px;
+  }
+
+  &.example-galleria-navi-right {
+    right: 15px;
+  }
+}
+
+.example-galleria-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  color: #FFFFFF;
+  padding: 0 1em;
+}

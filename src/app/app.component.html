@@ -1,9 +1,21 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        Welcome to {{ title }}!
-    </h1>
-    <img width="300" alt="Angular Logo"
-         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
+<section class="example-container">
+    <h1>Owl Galleria Example</h1>
+    <div class="example-wrapper">
+        <h2 class="example-header">Basic</h2>
+        <owl-galleria [images]="images" [panelWidth]="'600px'" [panelHeight]="'400px'"
+                      [animationMode]="'slide'" [showFilmStrip]="showFilmStrip" #galleria="owlGalleria">
+            <div class="example-galleria-navi example-galleria-navi-left" [owlGalleriaNav]="galleria" [prev]="true">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="example-galleria-navi example-galleria-navi-right" [owlGalleriaNav]="galleria">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="example-galleria-caption">
+                <h4>{{images[galleria.activeImage].title}}</h4>
+                <p>{{images[galleria.activeImage].desc}}</p>
+            </div>
+        </owl-galleria>
 
+        <owl-check-box class="example-chkbox" [(ngModel)]="showFilmStrip">Show Film Strip</owl-check-box>
+    </div>
+</section>
