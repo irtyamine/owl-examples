@@ -3,7 +3,9 @@
 
     <div class="example-wrapper">
 
-        <button class="example-btn" (click)="notify()" owlRipple>Show Notifier</button>
+        <button class="example-btn" (click)="notify()" owlRipple>Notifier</button>
+
+        <button class="example-btn" (click)="notifyCustom()" owlRipple>Custom Notifier</button>
 
         <owl-form-field class="example-input-wrapper">
             <input owlInput [(ngModel)]="message" placeholder="Message">

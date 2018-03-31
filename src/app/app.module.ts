@@ -6,10 +6,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 
 import { OWL_NOTIFIER_CONFIG, OwlFormFieldModule, OwlInputModule, OwlNotifierModule, OwlSelectModule } from 'owl-ng';
+import { CustomNotifierComponent } from './custom-notifier/custom-notifier.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        CustomNotifierComponent
     ],
     imports: [
         BrowserModule,
@@ -33,7 +35,8 @@ import { OWL_NOTIFIER_CONFIG, OwlFormFieldModule, OwlInputModule, OwlNotifierMod
             }
         }
     ],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    entryComponents: [CustomNotifierComponent]
 })
 export class AppModule {
 }

@@ -10,7 +10,7 @@
 .example-btn {
   padding: 1em;
   width: 100%;
-  max-width: 8em;
+  max-width: 10em;
   height: 3em;
   background: #ffffff;
   color: #3f51b5;
@@ -31,4 +31,8 @@
 .example-input-wrapper {
   display: block;
   width: 300px;
+}
+
+.custom-notifier-class {
+  background: cornflowerblue;
 }
