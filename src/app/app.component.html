@@ -1,9 +1,46 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        Welcome to {{ title }}!
-    </h1>
-    <img width="300" alt="Angular Logo"
-         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
+<section class="example-container">
+    <h1>Owl Notifier Examples</h1>
 
+    <div class="example-wrapper">
+
+        <button class="example-btn" (click)="notify()" owlRipple>Show Notifier</button>
+
+        <owl-form-field class="example-input-wrapper">
+            <input owlInput [(ngModel)]="message" placeholder="Message">
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <input owlInput [(ngModel)]="action" placeholder="Action Text">
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <input owlInput [(ngModel)]="life" placeholder="Life(ms)" type="number">
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <owl-select [(ngModel)]="type" placeholder="type">
+                <owl-option>none</owl-option>
+                <owl-option value="question">question</owl-option>
+                <owl-option value="warning">warning</owl-option>
+                <owl-option value="info">info</owl-option>
+                <owl-option value="success">success</owl-option>
+                <owl-option value="error">error</owl-option>
+            </owl-select>
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <owl-select [(ngModel)]="vertical" placeholder="Vertical">
+                <owl-option value="top">top</owl-option>
+                <owl-option value="bottom">bottom</owl-option>
+            </owl-select>
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <owl-select [(ngModel)]="horizontal" placeholder="Horizontal">
+                <owl-option value="left">left</owl-option>
+                <owl-option value="center">center</owl-option>
+                <owl-option value="right">right</owl-option>
+            </owl-select>
+        </owl-form-field>
+    </div>
+</section>
