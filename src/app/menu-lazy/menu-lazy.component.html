@@ -1,0 +1,14 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Lazy rendering</h2>
+
+    <button class="example-menu-btn"
+            [owlMenuTriggerFor]="basicMenu">
+        Menu
+    </button>
+    <owl-menu #basicMenu="owlMenu">
+        <ng-template owlMenuContent>
+            <button owl-menu-item>Item 1</button>
+            <button owl-menu-item>Item 2</button>
+        </ng-template>
+    </owl-menu>
+</div>

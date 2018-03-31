@@ -1,0 +1,21 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Passing data to Menu</h2>
+
+    <button class="example-menu-btn"
+            [owlMenuTriggerFor]="appMenu"
+            [owlMenuTriggerData]="{user: 'Sally', dummy: 'hello'}">
+        Menu Data: Sally
+    </button>
+
+    <button class="example-menu-btn"
+            [owlMenuTriggerFor]="appMenu" [owlMenuTriggerData]="{user: 'Bob', dummy: 'world'}">
+        Menu Data: Bob
+    </button>
+
+    <owl-menu #appMenu="owlMenu">
+        <ng-template owlMenuContent let-user="user" let-dummy="dummy">
+            <button owl-menu-item>Dummy: {{dummy}}</button>
+            <button owl-menu-item>Log off: {{user}}</button>
+        </ng-template>
+    </owl-menu>
+</div>

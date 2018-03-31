@@ -1,0 +1,43 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Menu Not Overlay Trigger Position</h2>
+
+    <button class="example-menu-btn"
+            [owlMenuTriggerFor]="menu1">
+        Trigger
+    </button>
+    <owl-menu #menu1="owlMenu" [overlapTrigger]="false">
+        <button owl-menu-item>Item 1</button>
+        <button owl-menu-item>Item 2</button>
+    </owl-menu>
+</div>
+
+<div class="example-wrapper">
+    <h2 class="example-header">Menu Before Trigger</h2>
+
+    <button class="example-menu-btn"
+            [style.margin-left]="'4em'"
+            [owlMenuTriggerFor]="menu2">
+        Trigger
+    </button>
+    <owl-menu #menu2="owlMenu"
+              [xPosition]="'before'"
+              [overlapTrigger]="false">
+        <button owl-menu-item>Item 1</button>
+        <button owl-menu-item>Item 2</button>
+    </owl-menu>
+</div>
+
+<div class="example-wrapper">
+    <h2 class="example-header">Menu Above Trigger</h2>
+
+    <button class="example-menu-btn"
+            [owlMenuTriggerFor]="menu3">
+        Trigger
+    </button>
+    <owl-menu #menu3="owlMenu"
+              [yPosition]="'above'"
+              [overlapTrigger]="false">
+        <button owl-menu-item>Item 1</button>
+        <button owl-menu-item>Item 2</button>
+    </owl-menu>
+</div>

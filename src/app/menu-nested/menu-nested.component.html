@@ -1,0 +1,34 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Nested Menu</h2>
+
+    <button class="example-menu-btn" [owlMenuTriggerFor]="menu">Menu</button>
+    <owl-menu #menu="owlMenu">
+        <button owl-menu-item [owlMenuTriggerFor]="vertebrates">Vertebrates</button>
+        <button owl-menu-item [owlMenuTriggerFor]="invertebrates">Invertebrates</button>
+
+        <owl-menu #vertebrates="owlMenu">
+            <button owl-menu-item [owlMenuTriggerFor]="amphibians">Fishes</button>
+            <button owl-menu-item>Amphibians</button>
+            <button owl-menu-item>Reptiles</button>
+            <button owl-menu-item>Birds</button>
+            <button owl-menu-item>Mammals</button>
+
+            <owl-menu #amphibians="owlMenu">
+                <button owl-menu-item [disabled]="true">Sonoran desert toad</button>
+                <button owl-menu-item>Western toad</button>
+                <button owl-menu-item>Arroyo toad</button>
+                <button owl-menu-item>Yosemite toad</button>
+            </owl-menu>
+        </owl-menu>
+
+        <owl-menu #invertebrates="owlMenu">
+            <button owl-menu-item>Insects</button>
+            <button owl-menu-item>Molluscs</button>
+            <button owl-menu-item>Crustaceans</button>
+            <button owl-menu-item>Corals</button>
+            <button owl-menu-item>Arachnids</button>
+            <button owl-menu-item>Velvet worms</button>
+            <button owl-menu-item>Horseshoe crabs</button>
+        </owl-menu>
+    </owl-menu>
+</div>
