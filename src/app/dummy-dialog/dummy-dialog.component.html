@@ -1,0 +1,9 @@
+<h1>Dummy Dialog</h1>
+<owl-form-field>
+    <input owlInput placeholder="Favourite NBA Team"
+           [(ngModel)]="value" (keydown)="onInputConfirm($event)" #inputElm>
+</owl-form-field>
+<div>
+    <button class="example-btn dummy-btn" (click)="onOkClick()">OK</button>
+    <button class="example-btn dummy-btn" (click)="onCancelClick()">Cancel</button>
+</div>
