@@ -2,7 +2,9 @@
     <h2 class="example-header">Basic</h2>
 
     <button class="example-menu-btn"
-            [owlMenuTriggerFor]="basicMenu">
+            [owlMenuTriggerFor]="basicMenu"
+            (menuOpened)="menuOpened()"
+            (menuClosed)="menuClosed()">
         Menu
     </button>
     <owl-menu #basicMenu="owlMenu">
@@ -18,6 +20,8 @@
     <button class="example-menu-btn"
             [owlMenuTriggerFor]="hoverMenu"
             (mouseenter)="trigger.openMenu()"
+            (menuOpened)="menuOpened()"
+            (menuClosed)="menuClosed()"
             #trigger="owlMenuTrigger">
         Menu
     </button>

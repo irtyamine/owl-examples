@@ -14,4 +14,12 @@ export class BasicComponent implements OnInit {
     ngOnInit() {
     }
 
+    public menuOpened(): void {
+        console.log('Menu Opened');
+    }
+
+    public menuClosed(): void {
+        console.log('Menu Closed');
+    }
+
 }
