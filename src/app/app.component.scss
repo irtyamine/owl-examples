@@ -1,0 +1,21 @@
+.example-container {
+  padding: 1rem;
+}
+
+.example-wrapper {
+  margin-bottom: 3rem;
+}
+
+.example-clock-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: 20em;
+}
+
+.example-clock-label {
+  margin: .5em 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}

@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 
+import { OwlClockModule } from 'owl-ng';
+
 @NgModule({
     declarations: [
         AppComponent
@@ -13,6 +15,8 @@ import { AppComponent } from './app.component';
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
+
+        OwlClockModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

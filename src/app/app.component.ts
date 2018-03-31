@@ -8,5 +8,8 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    title = 'app';
+
+    public clockTick( event: any ): void {
+        console.log(event);
+    }
 }
