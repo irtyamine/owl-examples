@@ -3,7 +3,9 @@
     <div class="example-wrapper">
         <h2 class="example-header">Basic</h2>
         <owl-galleria [images]="images" [panelWidth]="'600px'" [panelHeight]="'400px'"
-                      [animationMode]="'slide'" [showFilmStrip]="showFilmStrip" #galleria="owlGalleria">
+                      [animationMode]="'slide'" [showFilmStrip]="showFilmStrip"
+                      (imageClick)="imageClick($event)"
+                      #galleria="owlGalleria">
             <div class="example-galleria-navi example-galleria-navi-left" [owlGalleriaNav]="galleria" [prev]="true">
                 <i class="fas fa-chevron-left"></i>
             </div>

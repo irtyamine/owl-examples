@@ -9,7 +9,7 @@ import { OwlGalleriaImage } from 'owl-ng';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    
+
     public showFilmStrip = true;
 
     public images: OwlGalleriaImage[] = [
@@ -86,4 +86,8 @@ export class AppComponent {
             title: 'Title 12'
         }
     ];
+
+    public imageClick( event: any ): void {
+        console.log('clicked image index: ' + event.value);
+    }
 }
