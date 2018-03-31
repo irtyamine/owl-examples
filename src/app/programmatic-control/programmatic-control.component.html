@@ -1,0 +1,86 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Programmatic Control</h2>
+
+    <button class="example-btn" (click)="openPrev()" owlRipple>Previous</button>
+    <button class="example-btn" (click)="openNext()" owlRipple>Next</button>
+
+    <owl-accordion>
+        <owl-expansion-panel [expanded]=" index === 0" (opened)="setStep(0)">
+            <owl-expansion-panel-header>
+                <owl-expansion-panel-title>
+                    Game of Thrones
+                </owl-expansion-panel-title>
+                <owl-expansion-panel-description>
+                    Fantasy Drama
+                </owl-expansion-panel-description>
+            </owl-expansion-panel-header>
+
+            <!-- <editor-fold desc="dummy text"> -->
+            Set on the fictional continents of Westeros and Essos, Game of Thrones has several plot lines and a
+            large
+            ensemble cast but centers on three primary story arcs. The first story arc centers on the Iron Throne of
+            the
+            Seven Kingdoms and follows a web of alliances and conflicts among the dynastic noble families either
+            vying
+            to claim the throne or fighting for independence from the throne. The second story arc focuses on the
+            last
+            descendant of the realm's deposed ruling dynasty, exiled and plotting a return to the throne. The third
+            story arc centers on the longstanding brotherhood charged with defending the realm against the ancient
+            threats of the fierce peoples and legendary creatures that lie far north, and an impending winter that
+            threatens the realm.
+            <!-- </editor-fold> -->
+        </owl-expansion-panel>
+        <owl-expansion-panel [expanded]=" index === 1" (opened)="setStep(1)">
+            <owl-expansion-panel-header>
+                <owl-expansion-panel-title>
+                    The Walking Dead
+                </owl-expansion-panel-title>
+                <owl-expansion-panel-description>
+                    Post-Apocalyptic Horror Series
+                </owl-expansion-panel-description>
+            </owl-expansion-panel-header>
+
+            <!-- <editor-fold desc="dummy text"> -->
+            The Walking Dead takes place after the onset of a worldwide zombie apocalypse. The zombies, colloquially
+            referred to as "walkers", shamble towards living humans and other creatures to eat them (they are
+            attracted
+            to noise, e.g., gunshots, and to different scents, e.g., humans). Humans that they bite or scratch
+            become
+            infected and slowly turn into walkers as well. It is revealed early in the series that all living humans
+            carry this pathogen, so that if they die from any other cause, they will also turn into walkers. The
+            only
+            way to permanently kill a walker is to damage its brain or otherwise fully destroy the body, such as by
+            cremating it.
+            <!-- </editor-fold> -->
+        </owl-expansion-panel>
+        <owl-expansion-panel [expanded]=" index === 2" (opened)="setStep(2)">
+            <owl-expansion-panel-header>
+                <owl-expansion-panel-title>
+                    Modern Family
+                </owl-expansion-panel-title>
+                <owl-expansion-panel-description>
+                    Family Comedy Series
+                </owl-expansion-panel-description>
+            </owl-expansion-panel-header>
+
+            <!-- <editor-fold desc="dummy text"> -->
+            Modern Family revolves around three different types of families (nuclear, step- and same-sex) living in
+            the
+            Los Angeles area who are interrelated through Jay Pritchett and his children, Claire Dunphy (née
+            Pritchett)
+            and Mitchell Pritchett. Patriarch Jay is remarried to a much younger woman, Gloria Delgado Pritchett
+            (née
+            Ramirez), a passionate[5] Colombian with whom he has an infant son, Fulgencio (Joe) Pritchett, and a son
+            from Gloria's previous marriage,[6] Manny Delgado. Jay's daughter Claire was a homemaker, but has
+            returned
+            to the business world. She now works in her father's closet business. She is married to Phil Dunphy, a
+            realtor and self-professed "cool Dad". They have three children: Haley Dunphy, a stereotypical ditzy
+            teenage
+            girl;[7] Alex Dunphy, a nerdy, smart middle child;[8] and Luke Dunphy, the off-beat only son.[9] Jay's
+            lawyer son Mitchell and his husband Cameron Tucker have an adopted Vietnamese daughter, Lily
+            Tucker-Pritchett. As the name suggests, this family represents a modern-day family and episodes are
+            comically based on situations which many families encounter in real life.
+            <!-- </editor-fold> -->
+        </owl-expansion-panel>
+    </owl-accordion>
+</div>
