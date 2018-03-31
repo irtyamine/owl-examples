@@ -8,5 +8,11 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    title = 'app';
+
+    public lapResult: any[];
+
+    public lap( event: any ): void {
+        this.lapResult = event.lapList;
+        console.log(event.lapList);
+    }
 }
