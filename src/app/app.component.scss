@@ -1,0 +1,21 @@
+.example-container {
+  padding: 1rem;
+}
+
+.example-wrapper {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.example-pic-wrapper {
+  overflow: hidden;
+  .example-pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.example-input-wrapper {
+  width: 500px;
+}

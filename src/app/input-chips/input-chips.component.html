@@ -1,0 +1,14 @@
+<div class="example-wrapper">
+    <h2>Chips with Input</h2>
+    <owl-form-field class="example-input-wrapper">
+        <owl-chip-list [multiple]="true" #chipList>
+            <owl-chip *ngFor="let drink of drinks"
+                      [removable]="true" (remove)="removeDrinks(drink)">{{drink.name}}
+                <owl-chip-remove></owl-chip-remove>
+            </owl-chip>
+            <input placeholder="Drinks"
+                   [owlChipInputFor]="chipList"
+                   (inputConfirm)="addDrinks($event)">
+        </owl-chip-list>
+    </owl-form-field>
+</div>

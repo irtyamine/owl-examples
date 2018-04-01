@@ -1,0 +1,95 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Basic</h2>
+    <owl-chip-list>
+        <owl-chip>Stephen Curry</owl-chip>
+        <owl-chip>Klay Thompson</owl-chip>
+        <owl-chip>Kevin Durant</owl-chip>
+    </owl-chip-list>
+</div>
+
+<div class="example-wrapper">
+    <h2 class="example-header">Vertical</h2>
+    <owl-chip-list aria-orientation="vertical">
+        <owl-chip>Stephen Curry</owl-chip>
+        <owl-chip>Klay Thompson</owl-chip>
+        <owl-chip>Kevin Durant</owl-chip>
+    </owl-chip-list>
+</div>
+
+<div class="example-wrapper">
+    <h2 class="example-header">Bind to Selection</h2>
+    <owl-chip-list>
+        <owl-chip [selected]="true">Stephen Curry</owl-chip>
+        <owl-chip>Klay Thompson</owl-chip>
+        <owl-chip>Kevin Durant</owl-chip>
+    </owl-chip-list>
+</div>
+
+<div class="example-wrapper">
+    <h2 class="example-header">Customise Color</h2>
+    <owl-chip-list>
+        <owl-chip [ngStyle]="{background: '#00897b', color: '#ffffff'}">Stephen Curry</owl-chip>
+        <owl-chip [ngStyle]="{background: '#c0ca33', color: '#ffffff'}">Klay Thompson</owl-chip>
+        <owl-chip [ngStyle]="{background: '#ffb300', color: '#ffffff'}">Kevin Durant</owl-chip>
+    </owl-chip-list>
+</div>
+
+<div class="example-wrapper">
+    <h2 class="example-header">Prefix and Suffix</h2>
+    <owl-chip-list>
+        <owl-chip>
+            <owl-chip-prefix class="example-pic-wrapper">
+                <img class="example-pic" src="./assets/curry.png">
+            </owl-chip-prefix>
+            Stephen Curry
+        </owl-chip>
+        <owl-chip>
+            <owl-chip-prefix class="example-pic-wrapper">
+                <img class="example-pic" src="./assets/thompson.png">
+            </owl-chip-prefix>
+            Klay Thompson
+        </owl-chip>
+        <owl-chip>
+            <owl-chip-prefix class="example-pic-wrapper">
+                <img class="example-pic" src="./assets/durant.png">
+            </owl-chip-prefix>
+            Kevin Durant
+        </owl-chip>
+    </owl-chip-list>
+
+    <owl-chip-list>
+        <owl-chip>
+            Stephen Curry
+            <owl-chip-suffix class="example-pic-wrapper">
+                <img class="example-pic" src="./assets/curry.png">
+            </owl-chip-suffix>
+        </owl-chip>
+        <owl-chip>
+            Klay Thompson
+            <owl-chip-suffix class="example-pic-wrapper">
+                <img class="example-pic" src="./assets/thompson.png">
+            </owl-chip-suffix>
+        </owl-chip>
+        <owl-chip>
+            Kevin Durant
+            <owl-chip-suffix class="example-pic-wrapper">
+                <img class="example-pic" src="./assets/durant.png">
+            </owl-chip-suffix>
+        </owl-chip>
+    </owl-chip-list>
+</div>
+
+<div class="example-wrapper">
+    <h2 class="example-header">Disable and Unselectable</h2>
+    <owl-chip-list>
+        <owl-chip [disabled]="true">Stephen Curry</owl-chip>
+        <owl-chip [disabled]="true">Klay Thompson</owl-chip>
+        <owl-chip [disabled]="true">Kevin Durant</owl-chip>
+    </owl-chip-list>
+
+    <owl-chip-list>
+        <owl-chip [selectable]="false">Stephen Curry</owl-chip>
+        <owl-chip [selectable]="false">Klay Thompson</owl-chip>
+        <owl-chip [selectable]="false">Kevin Durant</owl-chip>
+    </owl-chip-list>
+</div>
