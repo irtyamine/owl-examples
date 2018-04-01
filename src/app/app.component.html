@@ -1,9 +1,82 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        Welcome to {{ title }}!
-    </h1>
-    <img width="300" alt="Angular Logo"
-         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
+<section class="example-container">
+    <h1>Owl Tooltip Examples</h1>
+
+    <div class="example-wrapper">
+        <h2 class="example-header">Basic</h2>
+
+        <span class="example-tooltip-wrapper"
+              [owlTooltip]="'I am your tooltip!'"
+              [owlTooltipPosition]="'left'">Hover to show tooltip(left)!
+        </span>
+
+        <span class="example-tooltip-wrapper"
+              [owlTooltip]="'I am your tooltip!'"
+              [owlTooltipPosition]="'above'">Hover to show tooltip(above)!
+        </span>
+
+        <span class="example-tooltip-wrapper"
+              [owlTooltip]="'I am your tooltip!'"
+              [owlTooltipPosition]="'right'">Hover to show tooltip(right)!
+        </span>
+
+        <span class="example-tooltip-wrapper"
+              [owlTooltip]="'I am your tooltip!'"
+              [owlTooltipPosition]="'below'">Hover to show tooltip(below)!
+        </span>
+
+    </div>
+
+    <div class="example-wrapper">
+
+        <h2 class="example-header">Trigger Tooltip by focus</h2>
+
+        <div class="example-tooltip-wrapper">
+            <input [owlTooltip]="'I am your tooltip!'"
+                   [owlTooltipPosition]="'left'" [owlTooltipTrigger]="'focus'"
+                   placeholder="Focus to show tooltip">
+        </div>
+
+        <div class="example-tooltip-wrapper">
+            <input [owlTooltip]="'I am your tooltip!'"
+                   [owlTooltipPosition]="'above'" [owlTooltipTrigger]="'focus'"
+                   placeholder="Focus to show tooltip">
+        </div>
+
+        <div class="example-tooltip-wrapper">
+            <input [owlTooltip]="'I am your tooltip!'"
+                   [owlTooltipPosition]="'right'" [owlTooltipTrigger]="'focus'"
+                   placeholder="Focus to show tooltip">
+        </div>
+
+        <div class="example-tooltip-wrapper">
+            <input [owlTooltip]="'I am your tooltip!'"
+                   [owlTooltipPosition]="'below'" [owlTooltipTrigger]="'focus'"
+                   placeholder="Focus to show tooltip">
+        </div>
+    </div>
+
+    <div class="example-wrapper">
+        <h2 class="example-header">Delay to show or hide a tooltip</h2>
+
+        <span class="example-tooltip-wrapper"
+              [owlTooltip]="'I am your tooltip!'"
+              [owlTooltipShowDelay]="1000">Tooltip wait 1 second to show</span>
+
+        <span class="example-tooltip-wrapper"
+              [owlTooltip]="'I am your tooltip!'"
+              [owlTooltipHideDelay]="1000">Tooltip wait 1 second to hide</span>
+    </div>
+
+    <div class="example-wrapper">
+        <h2 class="example-header">Manually calling showTooltip() and hideTooltip()</h2>
+
+        <button class="example-btn" owlRipple (click)="tooltip.showTooltip()">Show Tooltip</button>
+
+        <button class="example-btn" owlRipple (click)="tooltip.hideTooltip()">Hide Tooltip</button>
+
+        <span class="example-tooltip-wrapper"
+              [owlTooltip]="'I am your tooltip!'"
+              #tooltip="owlTooltip">Here is a tooltip!</span>
+    </div>
+</section>
 
