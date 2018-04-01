@@ -1,0 +1,38 @@
+<div class="example-wrapper">
+    <h2 class="example-header">Basic</h2>
+
+    <button class="example-btn" (click)="alert()" owlRipple>Sweet Alert</button>
+
+    <owl-form-field class="example-input-wrapper">
+        <input owlInput [(ngModel)]="dialogTitle" placeholder="Dialog Title">
+    </owl-form-field>
+
+    <owl-form-field class="example-input-wrapper">
+        <input owlInput [(ngModel)]="dialogContent" placeholder="Dialog Content">
+    </owl-form-field>
+
+    <owl-form-field class="example-input-wrapper">
+        <owl-select [(ngModel)]="dialogType" placeholder="type">
+            <owl-option>none</owl-option>
+            <owl-option value="question">question</owl-option>
+            <owl-option value="warning">warning</owl-option>
+            <owl-option value="info">info</owl-option>
+            <owl-option value="success">success</owl-option>
+            <owl-option value="error">error</owl-option>
+        </owl-select>
+    </owl-form-field>
+
+    <owl-form-field class="example-input-wrapper">
+        <input owlInput [(ngModel)]="dialogTimer" type="number" placeholder="SweetAlert Life">
+    </owl-form-field>
+
+    <owl-form-field class="example-input-wrapper">
+        <input owlInput [(ngModel)]="dialogConfirmBtnContent" placeholder="Confirm Button">
+    </owl-form-field>
+
+    <owl-form-field class="example-input-wrapper">
+        <input owlInput [(ngModel)]="dialogCancelBtnContent" placeholder="Cancel Button">
+    </owl-form-field>
+
+    <h4>Sweet Alert Return Action: {{dialogReturnResult.action}}</h4>
+</div>
