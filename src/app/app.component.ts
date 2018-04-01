@@ -8,5 +8,18 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    title = 'app';
+
+    public rateValue1: number;
+
+    public rateValue2: number;
+
+    public rateValue3: number;
+
+    public rateValue4 = 2;
+
+    public ratingDisabled: boolean;
+
+    public ratingReadonly: boolean;
+
+    public ratingAllowNull: boolean;
 }
