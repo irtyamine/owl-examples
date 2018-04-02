@@ -8,5 +8,19 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    title = 'app';
+    public movable = true;
+
+    public spinable = false;
+
+    public wingSelected(): void {
+        console.log('wing clicked');
+    }
+
+    public menuExpanded(): void {
+        console.log('menu expanded');
+    }
+
+    public menuCollapsed(): void {
+        console.log('menu collapsed');
+    }
 }
