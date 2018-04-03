@@ -1,18 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
+import { BasicComponent } from './basic/basic.component';
+import { StandAloneComponent } from './stand-alone/stand-alone.component';
+import { RangeComponent } from './range/range.component';
+import { StartViewComponent } from './start-view/start-view.component';
+import { ValidationComponent } from './validation/validation.component';
+import { RestrictionComponent } from './restriction/restriction.component';
+import { LocalizationComponent } from './localization/localization.component';
+import { MomentJsComponent } from './moment-js/moment-js.component';
+import { CustomFormatComponent } from './custom-format/custom-format.component';
+
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        BasicComponent,
+        StandAloneComponent,
+        RangeComponent,
+        StartViewComponent,
+        ValidationComponent,
+        RestrictionComponent,
+        LocalizationComponent,
+        MomentJsComponent,
+        CustomFormatComponent,
     ],
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
+        ReactiveFormsModule,
         FormsModule,
+
+        OwlDateTimeModule,
+        OwlNativeDateTimeModule,
     ],
     providers: [],
     bootstrap: [AppComponent]
