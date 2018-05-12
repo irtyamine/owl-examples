@@ -1,9 +1,78 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        Welcome to {{ title }}!
-    </h1>
-    <img width="300" alt="Angular Logo"
-         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
+<section class="example-container">
+    <h1>Owl Badge Examples</h1>
 
+    <div class="example-wrapper">
+        <h2>Basic</h2>
+        <button class="example-btn">
+            I have a badge
+            <owl-badge [value]="50"></owl-badge>
+        </button>
+    </div>
+
+    <div class="example-wrapper">
+        <h2>Badge with customised content</h2>
+        <button class="example-btn">
+            I have a badge
+            <owl-badge>
+                <span class="badge-content">
+                    <i class="far fa-address-book icon"></i>5
+                </span>
+            </owl-badge>
+        </button>
+    </div>
+
+    <div class="example-wrapper">
+        <h2>Badge with different position</h2>
+        <button class="example-btn">
+            I have a badge
+            <owl-badge [positionX]="position_x"
+                       [positionY]="position_y"
+                       [value]="50"></owl-badge>
+        </button>
+
+        <owl-form-field class="example-input-wrapper">
+            <owl-select [(ngModel)]="position_x" placeholder="Position X">
+                <owl-option value="right">right</owl-option>
+                <owl-option value="left">left</owl-option>
+            </owl-select>
+        </owl-form-field>
+
+        <owl-form-field class="example-input-wrapper">
+            <owl-select [(ngModel)]="position_y" placeholder="Position Y">
+                <owl-option value="above">above</owl-option>
+                <owl-option value="below">below</owl-option>
+            </owl-select>
+        </owl-form-field>
+    </div>
+
+    <div class="example-wrapper">
+        <h2>Basic</h2>
+        <button class="example-btn">
+            I have a badge
+            <owl-badge [value]="50"></owl-badge>
+        </button>
+    </div>
+
+    <div class="example-wrapper">
+        <h2>Toggle The Badge</h2>
+
+        <button class="example-btn">
+            I have a badge
+            <owl-badge [hidden]="hidden" [value]="50"></owl-badge>
+        </button>
+
+        <button class="example-btn" (click)="toggleHidden()" owlRipple>Toggle</button>
+    </div>
+
+
+    <div class="example-wrapper">
+        <h2>Change Badge Value</h2>
+
+        <button class="example-btn">
+            I have a badge
+            <owl-badge [value]="value"></owl-badge>
+        </button>
+
+        <button class="example-btn" (click)="increaseValue()" owlRipple>Change Value</button>
+    </div>
+</section>

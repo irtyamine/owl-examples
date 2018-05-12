@@ -8,5 +8,20 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-    title = 'app';
+
+    public hidden = false;
+
+    public value = 5;
+
+    public position_x = 'right';
+
+    public position_y = 'above';
+
+    toggleHidden(): void {
+        this.hidden = !this.hidden;
+    }
+
+    increaseValue(): void {
+        this.value += 1;
+    }
 }
