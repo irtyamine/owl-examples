@@ -13,6 +13,7 @@ import { RestrictionComponent } from './restriction/restriction.component';
 import { LocalizationComponent } from './localization/localization.component';
 import { MomentJsComponent } from './moment-js/moment-js.component';
 import { CustomFormatComponent } from './custom-format/custom-format.component';
+import { YearMonthComponent } from './year-month/year-month.component';
 
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 
@@ -28,6 +29,7 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
         LocalizationComponent,
         MomentJsComponent,
         CustomFormatComponent,
+        YearMonthComponent,
     ],
     imports: [
         BrowserModule,
