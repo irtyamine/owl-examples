@@ -17,6 +17,10 @@ export class AppComponent {
 
     public position_y = 'above';
 
+    public size = 'medium';
+
+    public overlap = true;
+
     toggleHidden(): void {
         this.hidden = !this.hidden;
     }

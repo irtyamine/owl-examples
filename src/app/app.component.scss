@@ -41,3 +41,11 @@
     margin-right: 5px;
   }
 }
+
+.example-radio-group {
+  display: flex;
+
+  .example-radio:not(:first-child) {
+    margin-left: .7em;
+  }
+}

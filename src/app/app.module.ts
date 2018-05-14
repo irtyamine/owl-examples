@@ -4,7 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { OwlBadgeModule, OwlFormFieldModule, OwlRippleModule, OwlSelectModule } from 'owl-ng';
+import {
+    OwlBadgeModule,
+    OwlFormFieldModule,
+    OwlRadioModule,
+    OwlRippleModule,
+    OwlSelectModule,
+    OwlSwitchModule
+} from 'owl-ng';
 
 @NgModule({
     declarations: [
@@ -18,6 +25,8 @@ import { OwlBadgeModule, OwlFormFieldModule, OwlRippleModule, OwlSelectModule } 
         OwlRippleModule,
         OwlFormFieldModule,
         OwlSelectModule,
+        OwlRadioModule,
+        OwlSwitchModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

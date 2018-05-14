@@ -3,6 +3,13 @@
 
     <div class="example-wrapper">
         <h2>Basic</h2>
+        <span>
+            Text with a badge
+            <owl-badge [overlap]="false" [value]="50"></owl-badge>
+        </span>
+    </div>
+
+    <div class="example-wrapper">
         <button class="example-btn">
             I have a badge
             <owl-badge [value]="50"></owl-badge>
@@ -27,9 +34,11 @@
             I have a badge
             <owl-badge [positionX]="position_x"
                        [positionY]="position_y"
+                       [size]="size" [overlap]="overlap"
                        [value]="50"></owl-badge>
         </button>
 
+        <h5>Config Position</h5>
         <owl-form-field class="example-input-wrapper">
             <owl-select [(ngModel)]="position_x" placeholder="Position X">
                 <owl-option value="right">right</owl-option>
@@ -43,14 +52,16 @@
                 <owl-option value="below">below</owl-option>
             </owl-select>
         </owl-form-field>
-    </div>
 
-    <div class="example-wrapper">
-        <h2>Basic</h2>
-        <button class="example-btn">
-            I have a badge
-            <owl-badge [value]="50"></owl-badge>
-        </button>
+        <h5>Config Size</h5>
+        <owl-radio-group class="example-radio-group" name="size" [(ngModel)]="size">
+            <owl-radio-button class="example-radio" value="small">small</owl-radio-button>
+            <owl-radio-button class="example-radio" value="medium">medium</owl-radio-button>
+            <owl-radio-button class="example-radio" value="large">large</owl-radio-button>
+        </owl-radio-group>
+
+        <h5>Config Overlap</h5>
+        <owl-switch class="example-switch" [(ngModel)]="overlap">Overlap</owl-switch>
     </div>
 
     <div class="example-wrapper">
