@@ -3,7 +3,7 @@ import { DateTimeAdapter, OWL_DATE_TIME_LOCALE, OwlDateTimeIntl } from 'ng-pick-
 import { NativeDateTimeAdapter } from 'ng-pick-datetime/date-time/adapter/native-date-time-adapter.class';
 
 // here is the default text string
-export class FrenchIntl {
+export class FrenchIntl extends OwlDateTimeIntl {
     /** A label for the up second button (used by screen readers).  */
     upSecondLabel = 'ajouter une seconde';
 
