@@ -5,14 +5,14 @@
         <h2>Basic</h2>
         <span>
             Text with a badge
-            <owl-badge [overlap]="false" [value]="50"></owl-badge>
+            <owl-badge [overlap]="false" [content]="50"></owl-badge>
         </span>
     </div>
 
     <div class="example-wrapper">
         <button class="example-btn">
             I have a badge
-            <owl-badge [value]="50"></owl-badge>
+            <owl-badge [content]="50"></owl-badge>
         </button>
     </div>
 
@@ -35,7 +35,7 @@
             <owl-badge [positionX]="position_x"
                        [positionY]="position_y"
                        [size]="size" [overlap]="overlap"
-                       [value]="50"></owl-badge>
+                       [content]="50"></owl-badge>
         </button>
 
         <h5>Config Position</h5>
@@ -69,7 +69,7 @@
 
         <button class="example-btn">
             I have a badge
-            <owl-badge [hidden]="hidden" [value]="50"></owl-badge>
+            <owl-badge [hidden]="hidden" [content]="50"></owl-badge>
         </button>
 
         <button class="example-btn" (click)="toggleHidden()" owlRipple>Toggle</button>
@@ -81,7 +81,7 @@
 
         <button class="example-btn">
             I have a badge
-            <owl-badge [value]="value"></owl-badge>
+            <owl-badge [content]="value"></owl-badge>
         </button>
 
         <button class="example-btn" (click)="increaseValue()" owlRipple>Change Value</button>
